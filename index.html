@@ -565,7 +565,7 @@
                     <span class="partner-name" style="display:none;">TOPS 88<br>CAR WASH</span>
                 </div>
                 <div class="partner-item">
-                    <img src="/assets/partners/9.webp" alt="Open for New Partner" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="/assets/partners/9-01.png" alt="Tops 88 Car Wash" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <span class="partner-name" style="display:none;">OPEN FOR <br>NEW PARTNER</span>
                 </div>
             </div>
@@ -657,7 +657,7 @@
             <span class="event-details-close" id="eventDetailsClose">&times;</span>
             <div class="event-details-header">
                 <div class="event-details-image">
-                    <img id="eventDetailsImage" src="" alt="Event Image">
+                    <img id="eventDetailsImage" src="" alt="Event Image" onerror="this.src='/assets/events/poster.webp'">
                 </div>
                 <div class="event-details-title">
                     <h2 id="eventDetailsTitle"></h2>
@@ -715,8 +715,54 @@
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="script.min.js" defer></script>
+    <script>
+      // Fallback for event details image when using minified bundle
+      document.addEventListener('DOMContentLoaded', function() {
+        var el = document.getElementById('eventDetailsImage');
+        if (!el) return;
+        el.addEventListener('error', function() {
+          if (!el.src || /\b(blank|about:)|^$/.test(el.src)) {
+            el.src = '/assets/events/poster.webp';
+          }
+        });
+      });
+    </script>
+    <script>
+      // Make Track Info open the same "Coming soon" modal as Get Updates
+      document.addEventListener('DOMContentLoaded', function () {
+        var trackInfoBtn = document.getElementById('trackInfoBtn');
+        var comingSoonModal = document.getElementById('comingSoonModal');
+        if (!trackInfoBtn || !comingSoonModal) return;
+        // Use capture to run before other listeners and stop them
+        trackInfoBtn.addEventListener(
+          'click',
+          function (e) {
+            e.preventDefault();
+            if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+            comingSoonModal.classList.add('active');
+          },
+          true
+        );
+      });
+    </script>
+    <script>
+      // Ensure each event shows its own image (works with minified bundle)
+      document.addEventListener('DOMContentLoaded', function() {
+        var cards = document.querySelectorAll('.event-card.clickable');
+        cards.forEach(function(card){
+          card.addEventListener('click', function(){
+            var img = this.querySelector('.event-image img');
+            if (!img) return;
+            // Defer to run after existing handlers populate the modal
+            setTimeout(function(){
+              var modalImg = document.getElementById('eventDetailsImage');
+              if (modalImg) modalImg.src = img.getAttribute('src');
+            }, 0);
+          });
+        });
+      });
+    </script>
 </body>
 </html>
 
 
-// kiwww

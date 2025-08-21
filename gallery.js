@@ -21,115 +21,115 @@ class SimpleGallery {
         this.photos = [
             {
                 id: 1,
-                src: "/assets/cars/gallery/101.jpg",
+                src: "/assets/cars/gallery/101.webp",
                 title: "Championship Action - Mitsubishi Lancer Evolution V",
                 caption: "Intense racing action during the championship finals"
             },
             {
                 id: 2,
-                src: "/assets/cars/gallery/102.jpg",
+                src: "/assets/cars/gallery/102.webp",
                 title: "Precision Driving - Mazda MX-5 Miata",
                 caption: "Perfect cornering technique through the chicane"
             },
             {
                 id: 3,
-                src: "/assets/cars/gallery/103.jpg",
+                src: "/assets/cars/gallery/103.webp",
                 title: "Subaru WRX STI Portrait",
                 caption: "Championship-winning Subaru WRX STI"
             },
             {
                 id: 4,
-                src: "/assets/cars/gallery/104.jpg",
+                src: "/assets/cars/gallery/104.webp",
                 title: "Event Day 1",
                 caption: "Opening day of the Spring Championship"
             },
             {
                 id: 5,
-                src: "/assets/cars/gallery/105.jpg",
+                src: "/assets/cars/gallery/105.webp",
                 title: "Behind the Scenes",
                 caption: "Team preparation and setup"
             },
             {
                 id: 6,
-                src: "/assets/cars/gallery/106.jpg",
+                src: "/assets/cars/gallery/106.webp",
                 title: "Championship Action",
                 caption: "High-speed cornering action"
             },
             {
                 id: 7,
-                src: "/assets/cars/gallery/107.jpg",
+                src: "/assets/cars/gallery/107.webp",
                 title: "Racing Competition",
                 caption: "Competitive racing moments"
             },
             {
                 id: 8,
-                src: "/assets/cars/gallery/108.jpg",
+                src: "/assets/cars/gallery/108.webp",
                 title: "Track Action",
                 caption: "Exciting track moments"
             },
             {
                 id: 9,
-                src: "/assets/cars/gallery/109.jpg",
+                src: "/assets/cars/gallery/109.webp",
                 title: "Championship Racing",
                 caption: "Championship-level competition"
             },
             {
                 id: 10,
-                src: "/assets/cars/gallery/110.jpg",
+                src: "/assets/cars/gallery/110.webp",
                 title: "Autocross Action",
                 caption: "Dynamic autocross racing"
             },
             {
                 id: 11,
-                src: "/assets/cars/gallery/111.jpg",
+                src: "/assets/cars/gallery/111.webp",
                 title: "Final Championship",
                 caption: "Championship finale moments"
             },
             {
                 id: 12,
-                src: "/assets/cars/gallery/92.jpg",
+                src: "/assets/cars/gallery/92.webp",
                 title: "Racing Action",
                 caption: "High-performance racing"
             },
             {
                 id: 13,
-                src: "/assets/cars/gallery/93.jpg",
+                src: "/assets/cars/gallery/93.webp",
                 title: "Track Competition",
                 caption: "Competitive track racing"
             },
             {
                 id: 14,
-                src: "/assets/cars/gallery/94.jpg",
+                src: "/assets/cars/gallery/94.webp",
                 title: "Speed Racing",
                 caption: "High-speed competition"
             },
             {
                 id: 15,
-                src: "/assets/cars/gallery/95.jpg",
+                src: "/assets/cars/gallery/95.webp",
                 title: "Championship Racing",
                 caption: "Championship-level action"
             },
             {
                 id: 16,
-                src: "/assets/cars/gallery/96.jpg",
+                src: "/assets/cars/gallery/96.webp",
                 title: "Autocross Competition",
                 caption: "Autocross racing competition"
             },
             {
                 id: 17,
-                src: "/assets/cars/gallery/97.jpg",
+                src: "/assets/cars/gallery/97.webp",
                 title: "Track Action",
                 caption: "Exciting track moments"
             },
             {
                 id: 18,
-                src: "/assets/cars/gallery/98.jpg",
+                src: "/assets/cars/gallery/98.webp",
                 title: "Racing Championship",
                 caption: "Championship racing action"
             },
             {
                 id: 19,
-                src: "/assets/cars/gallery/99.jpg",
+                src: "/assets/cars/gallery/99.webp",
                 title: "Final Competition",
                 caption: "Final competition moments"
             }
