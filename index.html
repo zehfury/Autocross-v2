@@ -520,7 +520,7 @@
                             <div class="swiper-slide" data-image="/assets/apparels/polo2-yellow.webp" data-title="Yellow Polo" data-description="Official racing polo in yellow">
                                 <picture>
                                     <source srcset="/assets/apparels/polo2-yellow.webp" type="image/webp">
-                                    <img src="/assets/apparels/polo2-yellow.png" alt="Yellow Polo" width="260" height="320" loading="lazy"/>
+                                    <img src="/assets/apparels/polo2-yellow.webp" alt="Yellow Polo" width="260" height="320" loading="lazy"/>
                                 </picture>
                             </div>
                             <div class="swiper-slide" data-image="/assets/apparels/polo3-black.webp" data-title="Black Polo" data-description="Official racing polo in black">
@@ -742,6 +742,35 @@
           if (!el.src || /\b(blank|about:)|^$/.test(el.src)) {
             el.src = '/assets/events/poster.webp';
           }
+        });
+      });
+    </script>
+    <script>
+      // Fix View All modal images (replace .jpg/.png with existing .webp assets)
+      document.addEventListener('DOMContentLoaded', function () {
+        var grid = document.getElementById('viewAllGrid');
+        if (!grid) return;
+
+        function swapToWebp() {
+          var imgs = grid.querySelectorAll('img');
+          imgs.forEach(function (img) {
+            var src = img.getAttribute('src') || '';
+            if (/^\/assets\/(drivers|teams)\/.+\.(jpg|png)$/i.test(src)) {
+              img.setAttribute('src', src.replace(/\.(jpg|png)$/i, '.webp'));
+              img.setAttribute('loading', 'lazy');
+            }
+          });
+        }
+
+        // Observe grid content changes and fix paths after it renders
+        var mo = new MutationObserver(function () { setTimeout(swapToWebp, 0); });
+        mo.observe(grid, { childList: true, subtree: true });
+
+        // Also fix right after opening modal and on tab clicks
+        var viewAllBtn = document.querySelector('.view-all-btn');
+        if (viewAllBtn) viewAllBtn.addEventListener('click', function () { setTimeout(swapToWebp, 0); });
+        document.querySelectorAll('.view-all-tab-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () { setTimeout(swapToWebp, 0); });
         });
       });
     </script>
