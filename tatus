@@ -1,0 +1,29 @@
+[33mcommit 26c02254bfcad0d35acc520358f01c8dc43a71f0[m
+Merge: 1169b29 40ef19d
+Author: James Dominic Pama <jamesdominicpama@gmail.com>
+Date:   Thu Aug 21 12:15:13 2025 +0800
+
+    Merge remote main with local updates
+
+[33mcommit 40ef19d4bc7f9f3ce3837689213bdbad8fb01aa9[m
+Merge: c5de222 5d5ed42
+Author: zehfury <90375454+zehfury@users.noreply.github.com>
+Date:   Thu Aug 21 12:04:45 2025 +0800
+
+    Merge pull request #2 from zehfury/updates
+    
+    Updates
+
+[33mcommit 5d5ed42b7abfa68236158e6ade6cbabf35feff11[m[33m ([m[1;31morigin/updates[m[33m)[m
+Merge: b13520d 1d08ea5
+Author: James Dominic Pama <jamesdominicpama@gmail.com>
+Date:   Thu Aug 21 11:49:00 2025 +0800
+
+    Merge branch 'updates' of https://github.com/zehfury/Autocrossv1 into updates
+
+[33mcommit b13520d04ee957192ad907bc9cbcedaa9dc1cc0e[m
+Merge: 28a3721 b29fadd
+Author: James Dominic Pama <jamesdominicpama@gmail.com>
+Date:   Thu Aug 21 11:40:32 2025 +0800
+
+    updates
