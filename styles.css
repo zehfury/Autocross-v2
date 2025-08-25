@@ -374,6 +374,18 @@ body {
     }
 }
 
+/* Hide long event descriptions on small screens */
+@media (max-width: 600px) {
+	.events-section .event-content p {
+		display: none;
+	}
+
+	/* Tighten spacing when description is hidden */
+	.events-section .event-content {
+		padding-bottom: 12px;
+	}
+}
+
 @media (max-width: 480px) {
     .navbar-container {
         gap: 15px;
@@ -5495,15 +5507,15 @@ nav .logo:hover {
     }
 
     .partners-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 30px 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 12px;
         max-width: 100%;
     }
 
     .partner-item {
-        height: 120px;
-        padding: 10px;
+        height: 80px;
+        padding: 8px;
         background: transparent;
     }
 }
